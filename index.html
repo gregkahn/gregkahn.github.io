@@ -1,537 +1,485 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
 
-<style type="text/css">
-h1
-{
-margin-top: 0;
-margin-bottom: 0;
-}
-h3
-{
-margin-top: 0;
-margin-bottom: 0;
-}
-body
-{
-color: #000000;
-background: #FFFFFF;
-}
-a:link { 
-color: #264889;
-}
-a:visited { 
-color: #264844;
-}
-a:hover { 
-color: #74AFAD;
-text-decoration: none;
-}
-a:active { 
-color: #74AFAD;
-}
-</style>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31068812-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<script type="text/javascript">
-  function recordOutboundLink(link, category, action) {
-    _gat._getTrackerByName()._trackEvent(category, action);
-    setTimeout('document.location = "' + link.href + '"', 100);
-  }
-</script>
-
-    <title>Gregory Kahn</title>
-</head>
-<body>
-
-<center>
-<table>
-<tr>
-<td style="width: 840px" valign=top align=left>
-
-<table cellpadding=5px>
-<tr>
-<td valign=top>
-
-<img src="images/portrait.jpg" border=0 width=280/>
-
-</td>
-<td align=left valign=top width=100%>
-<a id="top"></a>
-<h1>Gregory Kahn</h1>
-<br />
-Ph.D. student, <a href="http://www.eecs.berkeley.edu/">UC Berkeley EECS</a>
-<br />
-
-<dl>
-
-<dt><b>Office &amp; Mailing Address:</b></dt>
-<dd>2121 Berkeley Way</dd>
-<dd>Berkeley Way West, Desk 8044-22</dd>
-<dd>Berkeley CA 94704</dd>
-
-<dt><b>Email:</b></dt>
-<dd><img border=0 src="images/hideit.png" height=19></dd>
-
-<dt><b>Curriculum Vitae</b> (January 2020):</dt>
-<dd>[<a href="papers/gkahn_cv.pdf" onClick="recordOutboundLink(this, 'Links', 'CV');return false;">PDF</a>]</dd>
-
-<dt><b>Github:</b></dt>
-<dd><a href="https://github.com/gkahn13" onClick="recordOutboundLink(this, 'Links', 'github');return false;">https://github.com/gkahn13</a></dd>
-
-<dt><b>Linkedin:</b></dt>
-<dd><a href="https://www.linkedin.com/in/gkahn13/" onClick="recordOutboundLink(this, 'Links', 'linkedin');return false;">https://www.linkedin.com/in/gkahn13/</a></dd>
-
-</dl>
-
-</td>
-</tr>
-</table>
-
-I am a Ph.D. student in <a href="http://www.eecs.berkeley.edu/">EECS</a> at UC Berkeley advised by Professor <a href="http://www.cs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> and Professor <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> in the <a href="http://bair.berkeley.edu/">Berkeley Artificial Intelligence Research (BAIR)</a> Lab and have interned at <a href="https://www.skydio.com/">Skydio</a>.
-
-<p>
-My main research goal is to develop algorithms that enable robots to operate in the real world. I am currently working on deep reinforcement learning for mobile robots. In the past, I have worked on trajectory optimization, planning under uncertainty, manipulation, and surgical robotics. 
-</p>
-
-
-<table cellpadding=5px>
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/land.jpg" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-LaND: Learning to Navigate from Disengagements
-</b>
-<br>
-Gregory Kahn, Pieter Abbeel, Sergey Levine
-</br>
-arXiv
-[<a href="https://arxiv.org/pdf/2010.04689.pdf" onClick="recordOutboundLink(this, 'Links', 'LaND_pdf');return false;">PDF</a>][<a href="https://sites.google.com/view/sidewalk-learning" onClick="recordOutboundLink(this, 'Links', 'LaND_website');return false;">Website</a>][<a href="https://youtu.be/kmMQ4euVV1w" onClick="recordOutboundLink(this, 'Links', 'LaND_video');return false;">Video</a>]
-<p>
-One of the primary metrics for measuring progress for autonomous mobile robots has been how far can the robot travel before the robot fails  and a human must intervene? Typically, these failures are then used to help the autonomy developers debug the software. However, this debugging process is highly nontrivial, especially for learning-based components. We investigate how to use these disengagements as a direct learning signal for navigation. Our LaND reinforcement learning algorithm learns a neural network model that predicts which actions lead to disengagements given the current sensory observation, and then at test time plans and executes actions that avoid disengagements. Our results demonstrate LaND can successfully learn to navigate in diverse, real world sidewalk environments.
-</p>
-</td>
-</tr>
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/payload.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Model-Based Meta-Reinforcement Learning for Flight with Suspended Payloads
-</b>
-<br>
-Suneel Belkhale, Rachel Li, Gregory Kahn, Rowan McAllister, Roberto Calandra, Sergey Levine
-</br>
-arXiv
-[<a href="https://arxiv.org/pdf/2004.11345.pdf" onClick="recordOutboundLink(this, 'Links', 'payload_pdf');return false;">PDF</a>][<a href="https://sites.google.com/view/meta-rl-for-flight" onClick="recordOutboundLink(this, 'Links', 'payload_website');return false;">Website</a>][<a href="https://youtu.be/AP5FgKjFpvQ" onClick="recordOutboundLink(this, 'Links', 'payload_video');return false;">Video</a>]
-<p>
-Transporting suspended payloads is challenging for autonomous aerial vehicles because the payload can cause significant and unpredictable changes to the robot's dynamics. These changes can lead to suboptimal flight performance or even catastrophic failure. We propose a meta-learning approach that "learns how to learn" models of altered dynamics within seconds of post-connection flight data. Our experiments demonstrate that our online adaptation approach outperforms non-adaptive methods on a series of challenging suspended payload transportation tasks.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/jackal.jpg" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-BADGR: An Autonomous Self-Supervised Learning-Based Navigation System
-</b>
-<br>
-Gregory Kahn, Pieter Abbeel, Sergey Levine
-</br>
-arXiv
-[<a href="https://arxiv.org/pdf/2002.05700.pdf" onClick="recordOutboundLink(this, 'Links', 'badgr_pdf');return false;">PDF</a>][<a href="https://sites.google.com/view/badgr" onClick="recordOutboundLink(this, 'Links', 'badgr_website');return false;">Website</a>][<a href="https://youtu.be/UtoZEwrDHj4" onClick="recordOutboundLink(this, 'Links', 'badgr_video');return false;">Video</a>][<a href="https://github.com/gkahn13/badgr" onClick="recordOutboundLink(this, 'Links', 'badgr_github');return false;">Code</a>][<a href="https://bair.berkeley.edu/blog/2020/03/12/badgr/" onClick="recordOutboundLink(this, 'Links', 'badgr_blog');return false;">Blog</a>][News: <a href="https://spectrum.ieee.org/automaton/robotics/robotics-software/uc-berkeley-badgr-robot" onClick="recordOutboundLink(this, 'Links', 'badgr_ieee');return false;">IEEE Spectrum</a>]
-<p>
-We investigate how to move beyond purely geometric-based navigation using a method that learns about physical navigational affordances from experience. Our approach, which we call BADGR, is an end-to-end learning-based mobile robot navigation system that can be trained with self-supervised off-policy data gathered in real-world environments, without any simulation or human supervision. BADGR can navigate in real-world urban and off-road environments with geometrically distracting obstacles. It can also incorporate terrain preferences, generalize to novel environments, and continue to improve autonomously by gathering more data.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/skydio.jpg" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Deep Neural Pilot on Skydio 2
-</b>
-<br>
-Gregory Kahn, Abraham Bachrach, Hayk Martiros
-</br>
-[<a href="https://medium.com/skydio/deep-neural-pilot-on-skydio-2-fbf0154d3595" onClick="recordOutboundLink(this, 'Links', 'skydio_blog');return false;">Blog</a>][<a href="https://youtu.be/C2Cj4qk1wrA" onClick="recordOutboundLink(this, 'Links', 'skydio_video');return false;">Video</a>][News: <a href="https://spectrum.ieee.org/automaton/robotics/drones/deep-neural-pilot-skydio-2" onClick="recordOutboundLink(this, 'Links', 'skydio_ieee');return false;">IEEE Spectrum</a> <a href="https://blog.deeplearning.ai/blog/the-batch-political-deepfakes-tree-dodging-drones-faster-brain-surgery-robot-chicken-overlords" onClick="recordOutboundLink(this, 'Links', 'skydio_ieee');return false;">The Batch</a> <a href="https://jack-clark.net/2020/03/09/import-ai-188-get-ready-for-thermal-drone-vision-microsoft-puts-300000-up-for-better-ai-security-plus-does-ai-require-different-publication-norms/" onClick="recordOutboundLink(this, 'Links', 'skydio_importai');return false;">Import AI</a>]
-<p>
-We approached the problem of training a deep neural network pilot through the lens of imitation learning, in which the goal is to train a model that imitates an expert. Although standard imitation learning worked fine in easy scenarios, we found it did not generalize well to difficult ones. How can we do better? Our insight is that we don’t have just any expert, we have a computational expert: the Skydio Autonomy Engine. Therefore instead of imitating the actions of the expert, we imitate the thought process of the expert. We call this approach Computational Expert Imitation Learning, or CEILing. Using CEILing and only 3 hours of off-policy data, we successfully trained a deep neural network pilot that is capable of filming while avoiding obstacles.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/GtS.jpg" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Generalization through Simulation: Integrating Simulated and Real Data into Deep Reinforcement Learning for Vision-Based Autonomous Flight
-</b>
-<br>
-Katie Kang*, Suneel Belkhale*, Gregory Kahn*, Pieter Abbeel, Sergey Levine
-</br>
-ICRA 2019.
-[<a href="https://arxiv.org/pdf/1902.03701.pdf" onClick="recordOutboundLink(this, 'Links', 'GtS_pdf');return false;">PDF</a>][<a href="https://youtu.be/Rb2a6lSQSas" onClick="recordOutboundLink(this, 'Links', 'GtS_video');return false;">Video</a>][<a href="https://github.com/gkahn13/GtS" onClick="recordOutboundLink(this, 'Links', 'GtS_github');return false;">Code</a>][News: <a href="https://venturebeat.com/2019/02/12/ai-guides-single-camera-drone-through-hallways-its-never-seen-before/" onClick="recordOutboundLink(this, 'Links', 'GtS_vb');return false;">VentureBeat</a>]
-<p>
-The generalization capabilities of deep neural network control policies depends critically on the quantity and variety of data available for training. We investigate how data from both simulation and the real world can be combined in a hybrid deep reinforcement learning algorithm. Our method uses real-world data to learn about the dynamics of the system, and simulated data to learn a generalizable perception system that can enable the robot to avoid collisions using only a monocular camera. We demonstrate our approach on a real-world nano aerial vehicle collision avoidance task, showing that with only an hour of real-world data, the quadrotor can avoid collisions in new environments with various lighting conditions and geometry.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/outofdist.jpg" width=150 height=92 />
-</td>
-
-<td valign=top align=left>
-<b>
-Robustness to Out-of-Distribution Inputs via Task-Aware Generative Uncertainty
-</b>
-<br>
-Rowan McAllister, Gregory Kahn, Jeff Clune, Sergey Levine
-</br>
-ICRA 2019.
-[<a href="https://arxiv.org/pdf/1812.10687.pdf" onClick="recordOutboundLink(this, 'Links', 'out_of_distribution_pdf');return false;">PDF</a>]
-<p>
-Real-world robotic systems must react intelligently to their observations, even in unexpected circumstances. We present a method for uncertainty-aware robotic perception that combines generative modeling and model uncertainty to cope with uncertainty stemming from out-of-distribution states. We demonstrate that our method of projecting out-of-distribution observations improves the performance of four standard Bayesian and non-Bayesian neural network approaches, offering more favorable trade-offs between the proportion of time a robot can remain autonomous and the proportion of impending crashes successfully avoided.
-</p>
-</td>
-</tr>
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/caps.jpg" width=150 height=148 />
-</td>
-
-<td valign=top align=left>
-<b>
-Composable Action-Conditioned Predictors: Flexible Off-Policy Learning for Robot Navigation
-</b>
-<br>
-Gregory Kahn*, Adam Villaflor*, Pieter Abbeel, Sergey Levine
-</br>
-CoRL 2018.
-[<a href="https://arxiv.org/pdf/1810.07167.pdf" onClick="recordOutboundLink(this, 'Links', 'CAPs_pdf');return false;">PDF</a>][<a href="https://youtu.be/lOLT7zifEkg" onClick="recordOutboundLink(this, 'Links', 'CAPs_video');return false;">Video</a>][<a href="https://github.com/gkahn13/CAPs" onClick="recordOutboundLink(this, 'Links', 'CAPs_github');return false;">Code</a>]
-<p>
-We propose a framework that learns event cues from off-policy data, and can flexibly
-combine these event cues at test time to accomplish different tasks. These event cue
-labels are not assumed to be known a priori, but are instead labeled using learned
-models, such as computer vision detectors, and then "backed up" in time using an
-action-conditioned predictive model. We show that a simulated robotic car and a
-real-world RC car can gather data and train fully autonomously without any human-provided
-labels beyond those needed to train the detectors, and then at test-time be
-able to accomplish a variety of different tasks.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/image_roach.jpg" width=150 height=134 />
-</td>
-
-<td valign=top align=left>
-<b>
-Learning Image-Conditioned Dynamics Models for Control of Under-actuated Legged Millirobots
-</b>
-<br>
-Anusha Nagabandi, Guangzhao Yang, Thomas Asmar, Ravi Pandya, Gregory Kahn, Sergey Levine, Ronald S. Fearing
-</br>
-IROS 2018 [best paper finalist].
-[<a href="https://arxiv.org/pdf/1711.05253.pdf" onClick="recordOutboundLink(this, 'Links', 'roach_pdf');return false;">PDF</a>][<a href="https://youtu.be/3hmEygsTf8E" onClick="recordOutboundLink(this, 'Links', 'roach_video');return false;">Video</a>][<a href="http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/" onClick="recordOutboundLink(this, 'Links', 'roach_blog');return false;">Blog</a>]
-<p>
-Millirobots are a promising robotic platform for many applications due to their small size and low manufacturing costs, but are difficult to control. We present a sample-efficient learning based approach in which a model of the dynamics is learned from data, and then the model is used by an MPC controller. Furthermore, by leveraging neural network models, our approach allows for these predictions to be directly conditioned on camera images, which allows the robot to predict how different terrains might affect its dynamics. We show that with 17 minutes of random data collected with the VelociRoACH millirobot, the VelociRoACH can accurately follow trajectories at higher speeds and on more difficult terrains than a differential drive controller.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/gcg.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Self-supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation
-</b>
-<br>
-Gregory Kahn, Adam Villaflor, Bosen Ding, Pieter Abbeel, Sergey Levine
-</br>
-ICRA 2018.
-[<a href="https://arxiv.org/pdf/1709.10489.pdf" onClick="recordOutboundLink(this, 'Links', 'gcg_pdf');return false;">PDF</a>][<a href="https://www.youtube.com/watch?v=vgiW0HlQWVE" onClick="recordOutboundLink(this, 'Links', 'gcg_video');return false;">Video</a>][<a href="https://github.com/gkahn13/gcg" onClick="recordOutboundLink(this, 'Links', 'gcg_web');return false;">Code</a>][<a href="https://drive.google.com/file/d/145sQOLpVAbAh1gotVSeNMNlWs3hqviCE/view?usp=sharing" onClick="recordOutboundLink(this, 'Links', 'gcg_poster');return false;">Poster</a>][<a href="https://drive.google.com/file/d/12QfxJVd6Q_4x9rWhB6KjP0LWRdX2nISs/view?usp=sharing" onClick="recordOutboundLink(this, 'Links', 'gcg_slides');return false;">Slides</a>]<p>
-We propose a generalized computation graph that subsumes value-based model-free methods and model-based methods, and instantiate this graph to form a navigation model that learns from raw images and is sample efficient. Our simulated car experiments explore the design decisions of our navigation model, and show our approach outperforms single-step and N-step double Q-learning. We also evaluate our approach on a real-world RC car and show it can learn to navigate through a complex indoor environment with a few hours of fully autonomous, self-supervised training.
-</p>
-</td>
-</tr>
-
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/ant_left_traj.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning
-</b>
-<br>
-Anusha Nagabandi, Gregory Kahn, Ronald S. Fearing, Sergey Levine
-</br>
-ICRA 2018.
-[<a href="https://arxiv.org/pdf/1708.02596.pdf" onClick="recordOutboundLink(this, 'Links', 'mbmf_pdf');return false;">PDF</a>][<a href="https://sites.google.com/view/mbmf" onClick="recordOutboundLink(this, 'Links', 'mbmf_web');return false;">Video</a>][<a href="http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/" onClick="recordOutboundLink(this, 'Links', 'mbmf_blog');return false;">Blog</a>][<a href="https://github.com/nagaban2/nn_dynamics" onClick="recordOutboundLink(this, 'Links', 'mbmf_code');return false;">Code</a>]
-<p>
-We demonstrate that medium-sized neural network models can be combined with MPC to achieve excellent sample complexity in a model-based RL algorithm, producing stable and plausible gaits to accomplish various complex locomotion tasks. We also propose using deep neural network dynamics models to initialize a model-free learner. We empirically demonstrate that this resulting hybrid algorithm can drastically accelerate model-free learning on several MuJoCo locomotion tasks.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/rccar_teaser_cone.jpg" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Uncertainty-Aware Reinforcement Learning for Collision Avoidance
-</b>
-<br>
-Gregory Kahn, Adam Villaflor, Vitchyr Pong, Pieter Abbeel, Sergey Levine
-</br>
-arXiv
-[<a href="https://arxiv.org/pdf/1702.01182.pdf" onClick="recordOutboundLink(this, 'Links', 'probcoll_pdf');return false;">PDF</a>][<a href="https://sites.google.com/site/probcoll/" onClick="recordOutboundLink(this, 'Links', 'probcoll_web');return false;">Video</a>][<a href="https://drive.google.com/file/d/1TFRct1ATR3FrcdqY74Z1qziojZW83utB/view?usp=sharing" onClick="recordOutboundLink(this, 'Links', 'plato_slides');return false;">Slides</a>]
-<p>
-Practical deployment of reinforcement learning methods must contend with the fact that the training process itself can be unsafe for the robot. In this paper, we consider the specific case of a mobile robot learning to navigate an a priori unknown environment while avoiding collisions. We present an uncertainty-aware model-based learning algorithm that estimates the probability of collision together with a statistical estimate of uncertainty. We evaluate our method on a simulated and real-world quadrotor, and a real-world RC car.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/plato.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-PLATO: Policy Learning using Adaptive Trajectory Optimization
-</b>
-<br>
-Gregory Kahn, Tianhao Zhang, Sergey Levine, Pieter Abbeel
-</br>
-ICRA 2017.
-[<a href="http://arxiv.org/pdf/1603.00622" onClick="recordOutboundLink(this, 'Links', 'plato_pdf');return false;">PDF</a>][<a href="http://sites.google.com/site/platopolicy" onClick="recordOutboundLink(this, 'Links', 'plato_web');return false;">Video</a>][<a href="https://drive.google.com/file/d/1ZtPFI9_sirK4Y95NMAioFPcIf_P2uIWQ/view?usp=sharing" onClick="recordOutboundLink(this, 'Links', 'plato_slides');return false;">Slides</a>][<a href="https://drive.google.com/file/d/178B-j_Urfj5M7q5frRmKQ1w1LHw--qZV/view?usp=sharing" onClick="recordOutboundLink(this, 'Links', 'plato_poster');return false;">Poster</a>]
-<p>
-We propose PLATO, an algorithm that trains complex neural network policies using an adaptive variant of model-predictive control (MPC)
-to generate the supervision. We prove that our adaptive MPC teacher produces supervision that leads to good long-horizon performance
-of the resulting policy, and empirically demonstrate that MPC can avoid dangerous on-policy actions in unexpected situations during training.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-&nbsp;&nbsp;<img border=0 src="images/hausman-occlusion.png" width=130 height=216 />
-</td>
-
-<td valign=top align=left>
-<b>
-Occlusion-Aware Multi-Robot 3D Tracking
-</b>
-<br>
-Karol Hausman, Gregory Kahn, Sachin Patil, Joerg Mueller, Ken Goldberg, Pieter Abbeel, Gaurav Sukhatme
-</br>
-IROS 2016.
-<p>
-We  introduce  an  optimization-based  control  approach  that  enables  a  team  of  robots  to  cooperatively
-track a  target  using  onboard  sensing.  The  robots  are
-required to estimate their own positions as well as 
-tracking  the  target by reasoning about occlusions. 
-We  evaluate  our  approach  in  a  number  of  experiments in which
-we simulate a team of quadrotor robots flying in
-three-dimensional space to track a moving target on the ground.
-</p>
-</td>
-</tr>
-
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/quadrotormpc.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Learning Deep Control Policies for Autonomous Aerial Vehicles with MPC-Guided Policy Search
-</b>
-<br>
-Tianhao Zhang, Gregory Kahn, Sergey Levine, Pieter Abbeel
-</br>
-ICRA 2016.
-[<a href="http://arxiv.org/pdf/1509.06791" onClick="recordOutboundLink(this, 'Links', 'quadrotormpc_pdf');return false;">PDF</a>][<a href="http://rll.berkeley.edu/icra2016mpcgps/" onClick="recordOutboundLink(this, 'Links', 'quadrotormpc_web');return false;">Video</a>]
-<p>
-This paper presents a method for training neural network policies for autonomous aerial vehicles using model-predictive control (MPC) and
-guided policy search. A major challenge in applying reinforcement learning to aerial vehicles is the possibility of critical failure
-during training. To that end, MPC is used to guide off-policy learning with guided policy search. The final neural network policy provides
-runtime efficiency and generalization, and removes the need for explicit state estimation at test time by using raw sensor inputs.
-</p>
-</td>
-</tr>
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/rss2015.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Information-Theoretic Planning with Trajectory Optimization for Dense 3D Mapping
-</b>
-<br>
-Benjamin Charrow, Gregory Kahn, Sachin Patil, Sikang Liu, Ken Goldberg, Pieter Abbeel, Nathan Michael, Vijay Kumar
-</br>
-RSS 2015.
-[<a href="http://www.roboticsproceedings.org/rss11/p03.pdf" onClick="recordOutboundLink(this, 'Links', 'rss2015_pdf');return false;">PDF</a>]
-<p>
-We propose an information-theoretic planning approach that enables mobile robots to autonomously construct dense 3D maps using a two stage approach. First, we generate a candidate set of trajectories using a combination of global planning and generation of local motion primitives. Second, we employ a gradient-based optimization to locally refine the Cauchy-Schwarz quadratic mutual information (CSQMI) objective. We evaluated our approach through a series of real-world experiments with a ground robot and simulations with an aerial robot.
-</p>
-</td>
-</tr>
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/icra2015.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Active Exploration using Trajectory Optimization for Robotic Grasping in the Presence of Occlusions
-</b>
-<br>
-Gregory Kahn, Peter Sujan, Sachin Patil, Shaunak D. Bopardikar, Julian Ryde, Ken Goldberg, Pieter Abbeel
-</br>
-ICRA 2015.
-[<a href="http://www.eecs.berkeley.edu/~pabbeel/papers/2015-ICRA-active-exploration.pdf" onClick="recordOutboundLink(this, 'Links', 'icra2015_pdf');return false;">PDF</a>][<a href="http://rll.berkeley.edu/icra2015exploration/" onClick="recordOutboundLink(this, 'Links', 'icra2015_web');return false;">Video</a>]
-<p>
-We consider the task of actively exploring unstructured environments to facilitate robotic grasping of occluded objects. The objective is to plan the motion of hte sensor in order to search for feasible grasph handles that lie within occluded regions of the map. We evaluated our approach by actively exploring and attempting 300 grasps with an RGB-D sensor mounted on the end effector of a PR2 robot.
-</p>
-</td>
-</tr>
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/wafr2014.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Scaling up Gaussian Belief Space Planning through Covariance-Free Trajectory Optimization and Automatic Differentiation
-</b>
-<br>
-Sachin Patil, Gregory Kahn, Michael Laskey, John Schulman, Ken Goldberg, Pieter Abbeel
-</br>
-WAFR 2014.
-[<a href="http://robot.cmpe.boun.edu.tr/wafr2014/papers/paper_37.pdf" onClick="recordOutboundLink(this, 'Links', 'wafr2014_pdf');return false;">PDF</a>]
-<p>
-Belief space planning provides a principled framework to compute motion plans that explicitly gather information from sensing, as necessary, to reduce uncertainty about the robot and the environment. We consider the problem of planning in Gaussian belief spaces, which are parameterized in terms of mean states and covariances describing uncertainty. Our experiments suggest that our method can solve planning problems in 100 dimensional state spaces and obtain computational speedups of 400x over related trajectory optimization methods.
-</p>
-</td>
-</tr>
-
-
-
-<tr>
-<td valign=top align=left>
-<img border=0 src="images/icra2014.png" width=150 height=150 />
-</td>
-
-<td valign=top align=left>
-<b>
-Autonomous Multilateral Debridement with the Raven Surgical Robot
-</b>
-<br>
-Ben Kehoe, Gregory Kahn, Jeffrey Mahler, Jonathan Kim, Alex Lee, Anna Lee, Keisuke Nakagawa, Sachin Patil, W. Douglas Boyd, Pieter Abbeel, Ken Goldberg
-</br>
-ICRA 2014.
-[<a href="http://www.cs.berkeley.edu/~pabbeel/papers/2014-ICRA-multilateral-ravens.pdf" onClick="recordOutboundLink(this, 'Links', 'icra2014_pdf');return false;">PDF</a>][<a href="http://rll.berkeley.edu/raven/debridement.html" onClick="recordOutboundLink(this, 'Links', 'icra2014_web');return false;">Video</a>]
-<p>
-We present an implemented automated surgical debridement system that uses the Raven, an open-architecture surgical robot with two cable-driven 7 DOF arms. Our system combines stereo vision for 3D perception, trajopt, an optimization-based motion planner, and model predictive control (MPC).
-</p>
-</td>
-</tr>
-
-</table>
-
-
-<h2>Research Support<a id="support"></a></h2>
-
-<table cellpadding=5px width=100%>
-
-
-<tr>
-<td valign=top align=center>
-<img border=0 src="images/nsfgrfp.gif" width=50 height=50 />
-</td>
-<td valign=center align=left width=100%>
-<font size=+1><b>National Science Foundation Graduate Research Fellowship</b>, 2016-present</font>
-</td>
-</tr>
-
-</table>
-
-
-</center>
-
-</body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 100px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <title>Gregory Kahn</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Gregory Kahn</name>
+        </p>
+        <p>
+        I am a PhD candidate in <a href=http://bair.berkeley.edu>BAIR</a> at UC Berkeley, advised by <a href=https://people.eecs.berkeley.edu/~svlevine/>Professor Sergey Levine</a> and <a href=http://www.cs.berkeley.edu/~pabbeel/>Professor Pieter Abbeel</a>. I did my bachelors at <a href=http://www.eecs.berkeley.edu/>UC Berkeley</a>, and have previously interned at <a href=https://www.skydio.com/>Skydio</a>. I am funded by the <a href=http://www.nsfgrfp.org/>NSF GRFP</a>.
+        </p>
+        <p align=center>
+<a href="mailto:gkahn13@gmail.com">Email</a> &nbsp/&nbsp
+<a href="papers/gkahn_cv.pdf">CV</a> &nbsp/&nbsp
+<a href="https://github.com/gkahn13"> GitHub </a> &nbsp/&nbsp
+<a href="https://www.linkedin.com/in/gkahn13/"> LinkedIn </a> &nbsp/&nbsp
+<a href="https://scholar.google.com/citations?user=jERkdhIAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp 
+<a href="https://youtu.be/MSOG8tUFRfo"> Dissertation Talk </a>
+        </p>
+        </td>
+        <td width="40%">
+        <img src="images/portrait.jpg" width="250">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading>
+          <p>
+	    My main research goal is to develop algorithms that enable robots to operate in the real world. I am currently working on deep reinforcement learning for mobile robots. In the past, I have worked on trajectory optimization, planning under uncertainty, manipulation, and surgical robotics.
+          </p>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/land.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/2010.04689.pdf">
+        <papertitle>LaND: Learning to Navigate from Disengagements</papertitle></a><br>
+Gregory Kahn, Pieter Abbeel, Sergey Levine<br>
+                <em>arXiv</em><br>
+                <a href ="https://arxiv.org/abs/2010.04689">arxiv</a>
+		/
+		<a href ="https://sites.google.com/view/sidewalk-learning">website</a>
+		/
+		<a href="https://youtu.be/kmMQ4euVV1w">video</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/payload.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/2004.11345.pdf">
+        <papertitle>Model-Based Meta-Reinforcement Learning for Flight with Suspended Payloads</papertitle></a><br>
+Suneel Belkhale, Rachel Li, Gregory Kahn, Rowan McAllister, Roberto Calandra, Sergey Levine<br>
+                <em>arXiv</em><br>
+                <a href ="https://arxiv.org/abs/2004.11345">arxiv</a>
+		/
+		<a href ="https://sites.google.com/view/meta-rl-for-flight">website</a>
+		/
+		<a href="https://youtu.be/AP5FgKjFpvQ">video</a>
+              </a></p>
+              </td>
+            </tr>
+
+
+
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/jackal.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/2002.05700.pdf">
+        <papertitle>BADGR: An Autonomous Self-Supervised Learning-Based Navigation System</papertitle></a><br>
+Gregory Kahn, Pieter Abbeel, Sergey Levine<br>
+                <em>arXiv</em><br>
+                <a href ="https://arxiv.org/abs/2002.05700">arxiv</a>
+		/
+		<a href="https://sites.google.com/view/badgr">website</a>
+		/
+		<a href="https://youtu.be/UtoZEwrDHj4">video</a>
+		/
+		<a href="https://github.com/gkahn13/badgr">code</a>
+		/
+		<a href="https://bair.berkeley.edu/blog/2020/03/12/badgr/">blog</a>
+		/
+		<a href="https://spectrum.ieee.org/automaton/robotics/robotics-software/uc-berkeley-badgr-robot">news</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/skydio.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://medium.com/skydio/deep-neural-pilot-on-skydio-2-fbf0154d3595">
+        <papertitle>Deep Neural Pilot on Skydio 2</papertitle></a><br>
+Gregory Kahn, Abraham Bachrach, Hayk Martiros<br>
+		<a href="https://youtu.be/C2Cj4qk1wrA">video</a>
+		/
+    news:
+    <a href="https://spectrum.ieee.org/automaton/robotics/drones/deep-neural-pilot-skydio-2">IEEE Spectrum</a>
+    ,
+    <a href="https://blog.deeplearning.ai/blog/the-batch-political-deepfakes-tree-dodging-drones-faster-brain-surgery-robot-chicken-overlords"">The Batch</a>
+    ,
+    <a href="https://jack-clark.net/2020/03/09/import-ai-188-get-ready-for-thermal-drone-vision-microsoft-puts-300000-up-for-better-ai-security-plus-does-ai-require-different-publication-norms/"">Import AI</a>
+              </a></p>
+              </td>
+            </tr>
+
+
+
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/GtS.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1902.03701.pdf">
+        <papertitle>Generalization through Simulation: Integrating Simulated and Real Data into Deep Reinforcement Learning for Vision-Based Autonomous Flight</papertitle></a><br>
+Katie Kang*, Suneel Belkhale*, Gregory Kahn*, Pieter Abbeel, Sergey Levine<br>
+                <em>ICRA 2019</em><br>
+                <a href ="https://arxiv.org/abs/1902.03701">arxiv</a>
+		/
+		<a href="https://youtu.be/Rb2a6lSQSas">video</a>
+		/
+		<a href="https://github.com/gkahn13/GtS">code</a>
+		/
+		<a href="https://venturebeat.com/2019/02/12/ai-guides-single-camera-drone-through-hallways-its-never-seen-before/">news</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/outofdist.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1812.10687.pdf">
+        <papertitle>Robustness to Out-of-Distribution Inputs via Task-Aware Generative Uncertainty</papertitle></a><br>
+Rowan McAllister, Gregory Kahn, Jeff Clune, Sergey Levine<br>
+                <em>ICRA 2019</em><br>
+                <a href ="https://arxiv.org/abs/1812.10687">arxiv</a>
+              </a></p>
+              </td>
+            </tr>
+
+
+
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/caps.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1810.07167.pdf">
+        <papertitle>Composable Action-Conditioned Predictors: Flexible Off-Policy Learning for Robot Navigation</papertitle></a><br>
+Gregory Kahn*, Adam Villaflor*, Pieter Abbeel, Sergey Levine<br>
+                <em>CoRL 2018</em><br>
+                <a href ="https://arxiv.org/abs/1810.07167">arxiv</a>
+		/
+		<a href="https://youtu.be/lOLT7zifEkg">video</a>
+		/
+		<a href="https://github.com/gkahn13/CAPs">code</a>
+              </a></p>
+              </td>
+            </tr>
+
+
+
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/image_roach.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1711.05253.pdf">
+        <papertitle>Learning Image-Conditioned Dynamics Models for Control of Under-actuated Legged Millirobots</papertitle></a><br>
+Anusha Nagabandi, Guangzhao Yang, Thomas Asmar, Ravi Pandya, Gregory Kahn, Sergey Levine, Ronald S. Fearing<br>
+                <em>IROS 2018 [best paper finalist]</em><br>
+                <a href ="https://arxiv.org/abs/1711.05253">arxiv</a>
+		/
+		<a href="https://youtu.be/3hmEygsTf8E">video</a>
+		/
+		<a href="http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/"">blog</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/gcg.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1709.10489.pdf">
+        <papertitle>Self-supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation</papertitle></a><br>
+Gregory Kahn, Adam Villaflor, Bosen Ding, Pieter Abbeel, Sergey Levine<br>
+                <em>ICRA 2018</em><br>
+                <a href ="https://arxiv.org/abs/1709.10489">arxiv</a>
+		/
+		<a href="https://www.youtube.com/watch?v=vgiW0HlQWVE">video</a>
+		/
+		<a href="https://github.com/gkahn13/gcg">code</a>
+		/
+		<a href="https://drive.google.com/file/d/145sQOLpVAbAh1gotVSeNMNlWs3hqviCE/view?usp=sharing">poster</a>
+		/
+		<a href="https://drive.google.com/file/d/12QfxJVd6Q_4x9rWhB6KjP0LWRdX2nISs/view?usp=sharing"">slides</a>
+              </a></p>
+              </td>
+            </tr>
+
+         
+         
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/ant_left_traj.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1708.02596.pdf">
+        <papertitle>Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning</papertitle></a><br>
+Anusha Nagabandi, Gregory Kahn, Ronald S. Fearing, Sergey Levine<br>
+                <em>ICRA 2018</em><br>
+                <a href ="https://arxiv.org/abs/1708.02596">arxiv</a>
+		/
+		<a href="https://sites.google.com/view/mbmf">video</a>
+		/
+		<a href="https://github.com/nagaban2/nn_dynamics">code</a>
+		/
+		<a href="http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/">blog</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/rccar_teaser_cone.jpg' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1702.01182.pdf">
+        <papertitle>Uncertainty-Aware Reinforcement Learning for Collision Avoidance</papertitle></a><br>
+Gregory Kahn, Adam Villaflor, Vitchyr Pong, Pieter Abbeel, Sergey Levine<br>
+                <em>arXiv</em><br>
+                <a href ="https://arxiv.org/abs/1702.01182">arxiv</a>
+		/
+		<a href="https://sites.google.com/site/probcoll/">video</a>
+		/
+		<a href="https://drive.google.com/file/d/1TFRct1ATR3FrcdqY74Z1qziojZW83utB/view?usp=sharing">slides</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/plato.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1603.00622.pdf">
+        <papertitle>PLATO: Policy Learning using Adaptive Trajectory Optimization</papertitle></a><br>
+Gregory Kahn, Tianhao Zhang, Sergey Levine, Pieter Abbeel<br>
+                <em>ICRA 2017</em><br>
+                <a href ="https://arxiv.org/abs/1603.00622">arxiv</a>
+		/
+		<a href="http://sites.google.com/site/platopolicy">video</a>
+		/
+		<a href="https://drive.google.com/file/d/1ZtPFI9_sirK4Y95NMAioFPcIf_P2uIWQ/view?usp=sharing">slides</a>
+		/
+		<a href="https://drive.google.com/file/d/178B-j_Urfj5M7q5frRmKQ1w1LHw--qZV/view?usp=sharing">poster</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/quadrotormpc.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="https://arxiv.org/pdf/1509.06791.pdf">
+        <papertitle>Learning Deep Control Policies for Autonomous Aerial Vehicles with MPC-Guided Policy Search</papertitle></a><br>
+Tianhao Zhang, Gregory Kahn, Sergey Levine, Pieter Abbeel<br>
+                <em>ICRA 2016</em><br>
+                <a href ="https://arxiv.org/abs/1509.06791">arxiv</a>
+		/
+		<a href="http://rll.berkeley.edu/icra2016mpcgps/">video</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+          <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/rss2015.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="http://www.roboticsproceedings.org/rss11/p03.pdf">
+        <papertitle>Information-Theoretic Planning with Trajectory Optimization for Dense 3D Mapping</papertitle></a><br>
+Benjamin Charrow, Gregory Kahn, Sachin Patil, Sikang Liu, Ken Goldberg, Pieter Abbeel, Nathan Michael, Vijay Kumar<br>
+                <em>RSS 2015</em><br>
+              </a></p>
+              </td>
+            </tr>
+            
+         
+                   <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/icra2015.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="http://www.eecs.berkeley.edu/~pabbeel/papers/2015-ICRA-active-exploration.pdf">
+        <papertitle>Active Exploration using Trajectory Optimization for Robotic Grasping in the Presence of Occlusions</papertitle></a><br>
+Gregory Kahn, Peter Sujan, Sachin Patil, Shaunak D. Bopardikar, Julian Ryde, Ken Goldberg, Pieter Abbeel<br>
+                <em>ICRA 2015</em><br>
+		<a href="http://rll.berkeley.edu/icra2015exploration/">video</a>
+              </a></p>
+              </td>
+            </tr>
+            
+            
+                   <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/wafr2014.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="http://rll.berkeley.edu/beliefopt/WAFR2014_submission.pdf">
+        <papertitle>Scaling up Gaussian Belief Space Planning through Covariance-Free Trajectory Optimization and Automatic Differentiation</papertitle></a><br>
+Sachin Patil, Gregory Kahn, Michael Laskey, John Schulman, Ken Goldberg, Pieter Abbeel<br>
+                <em>WAFR 2014</em><br>
+              </a></p>
+              </td>
+            </tr>
+         
+         
+                   <tr >
+          <td width="15%">
+            <div class="one">
+                <img src='images/icra2014.png' width=130%>
+            </div>
+              </td>
+              <td valign="top" width="85%">
+              <p><a href="http://www.cs.berkeley.edu/~pabbeel/papers/2014-ICRA-multilateral-ravens.pdf">
+        <papertitle>Autonomous Multilateral Debridement with the Raven Surgical Robot</papertitle></a><br>
+Ben Kehoe, Gregory Kahn, Jeffrey Mahler, Jonathan Kim, Alex Lee, Anna Lee, Keisuke Nakagawa, Sachin Patil, W. Douglas Boyd, Pieter Abbeel, Ken Goldberg<br>
+                <em>ICRA 2014</em><br>
+		<a href="http://rll.berkeley.edu/raven/debridement.html">video</a>
+              </a></p>
+              </td>
+            </tr>
+         
+         
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          Website template from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.
+	  <br>
+	  Last updated January 2020.
+          </font>
+        </p>
+        </td>
+      </tr>
+      </table>
+    </td>
+    </tr>
+  </table>
+  </body>
 </html>
 
